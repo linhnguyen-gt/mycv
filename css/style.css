@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fascinate&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+/*--------------------------------------------------------*/
+.container-fluid .navbar-branch{
+    text-decoration: none;
+    font-family: 'Anton', sans-serif;
+    color: #000;
+}
+.navbar{
+    font-family: 'Libre Franklin', sans-serif;
+}
+.collapse{
+    margin-right: 10px;
+}
+/*--------------------------------------------------------*/
+.checkbox{
+    position: absolute;
+    top: -15px;
+    width: 68px;
+    height: 30px;
+    border-radius: 25px;
+    background: linear-gradient(0deg, #d8d8d8, #cccccc);
+    border-top: 0.02em solid #ececec;
+    border-bottom: 0.02em solid #ececec;
+}
+.checkbox .inner{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    background: linear-gradient(0deg, #a5a5a5, #717171);
+    border-radius: 20px;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, .5);
+}
+.checkbox .inner .toggle{
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 30px;
+    height: 23px;
+    border-radius: 25px;
+    background: linear-gradient(0deg, #ccc, #e4e4e4);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    border-top: 0.04em solid #ececec;
+    border-bottom: 0.01em solid #ececec;
+    transition: 0.5s;
+}
+.checkbox .inner .toggle:hover{
+    transform: scale(1.2);
+}
+.checkbox .inner .toggle:before{
+    content: 'Dark';
+    top: 4.1px;
+    left: 4px;
+    right: 5px;
+    bottom: 4px;
+    position: absolute;
+    font-size: 9px;
+    text-align: center;
+    line-height: 14px;
+    color: #b2bec3;
+    background: linear-gradient(0deg, #ccc, #e4e4e4);
+    font-family: 'Libre Franklin', sans-serif;  
+}
+
+.checkbox .inner.active .toggle{
+    left: 30px;
+}
+.checkbox .inner.active{
+    background:#ffffff;
+}
+.checkbox .inner.active .toggle:before{
+    content: 'Light';
+    top: 4.1px;
+    left: 5px;
+    position: absolute;
+    font-size: 9px;
+    color: #ffffff;
+    font-family: 'Libre Franklin', sans-serif;
+}
+/*--------------------------------------------------------*/
+.container{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+img{
+    margin-top: 50px;
+    width: 450px;
+    border-radius: 100px;
+    border: 5px solid #dfe6e9;
+}
+#myprofile p{
+    position: relative;
+    text-align: center;
+    background: hsl(204, 93%, 72%);
+    width: 200px;
+    height: 50px;
+    top: 10px;
+    left: 120px;
+    padding: 6px;
+    font-size: 20px;
+    color: #ffffff;
+    border-radius: 25px;
+}
+.container a{
+    display: block;
+    background: hsl(204, 93%, 72%);
+    padding: 7px 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    color: #ffffff;
+    margin-top: 7px;
+    margin-left: 120px;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.container a:hover{
+    transform: scale(1.2);
+
+}
+.text-banner{
+    position: relative;
+    top: 40px;
+    left: 50px;
+}
+.text-banner h2{
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-family: 'Fascinate', cursive;
+}
+.text-banner p{
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    line-height: 40px;
+}
+#particles-js{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+/*--------------------------------------------------------*/
+#about{
+    position: relative;
+    top: 50px;
+    background:#3498db;
+    margin-bottom: 60px;
+}
+#about h2{
+    color: #f5f6fa;
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 30px;
+    text-align: center;
+}
+.information-detail{
+    margin: 0 auto;
+    font-family: 'Libre Franklin', sans-serif;
+    color: #dfe6e9;
+    font-size: 20px;
+    padding-bottom: 40px;
+}
+.detail .about-infor{
+    padding: 10px;
+}
+.detail .text{
+    letter-spacing: 1px;
+    padding: 10px 20px;
+}
+.detail .point{
+    padding: 15px;
+}
+/*--------------------------------------------------------*/
+#education{
+    margin: 90px 0px 130px;
+}
+#education h2{
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 20px;
+    text-align: center;
+}
+.information-education{
+    font-size: 20px;
+    margin: 0 auto;
+    font-family: 'Libre Franklin', sans-serif;
+}
+.school{
+    padding: 10px 3px;
+}
+.space{
+    padding:20px;
+}
+/*--------------------------------------------------------*/
+#skill{
+    background:#3498db;
+}
+#skill h2{
+    color: #f5f6fa;
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 20px;
+    text-align: center 
+}
+.chart-area{
+    width: 70%;
+    padding: 50px 0;
+    margin: 0 auto;
+}
+.chart-area p{
+    padding: 20px 0px;
+    text-align: center;
+    font-style: italic;
+    color: #dfe6e9;
+    font-size: 20px;
+}
+.text{
+    padding: 20px 50px;
+    font-family: 'Libre Franklin', sans-serif;
+    color: #dfe6e9;
+}
+.text h3{
+    font-family: 'Libre Franklin', sans-serif;
+    color: #dfe6e9;
+    font-weight: bold;
+}
+/*--------------------------------------------------------*/
+#contact{
+    padding: 20px;
+    background: #b2bec3;
+}
+#contact h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 3px;
+}
+#contact p{
+    text-align: center;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
+}
+.social-network{
+    padding-top: 10px;
+    padding-right: 30px;
+    margin: 0 auto;
+}
+.social-network ul{
+    list-style: none;
+}
+.social-network ul li{
+    display: inline-block;
+}
+.social-network ul li a{
+    width: 50px;
+    height: 50px;
+    line-height: 30px;
+    font-size: 20px;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-decoration: none;
+    transition: 0.5s;
+    box-sizing: border-box;
+}
+.social-network span{
+    font-size: 15px;
+    font-family: 'Libre Franklin', sans-serif;
+    color: #34495e;
+    padding:3px;
+}
+.social-network ul li:hover a{
+    width: 180px;
+}
+.social-network ul li:hover a.email{
+    width: 230px;
+}
+.social-network ul li a .fas,a .fab{
+    width: 50px;
+    height: 50px;
+    line-height: 30px;
+    background: #ecf0f1;
+    color: #2d3436;
+    box-sizing: border-box;
+    padding: 10px;   
+    text-align: center; 
+}
+.social-network ul li:nth-child(1) a{
+    background: #ecf0f1;
+    border-radius: 25px;
+}
+.social-network ul li:nth-child(2) a{
+    background: #ecf0f1;
+    border-radius: 25px;
+}
+.social-network ul li:nth-child(3) a{
+    background: #ecf0f1;
+    border-radius: 25px;
+}
+/*--------------------------------------------------------*/
+#copyright{
+    background: #2d3436;
+    color: #ecf0f1;
+}
+#copyright .col-xs-6{
+    padding-top: 10px;
+}
+#copyright .col-xs-6:last-child{
+    text-align: right;
+}
+/*--------------------------------------------------------*/
+/*Dark - Light Mode*/
+/*--------------------------------------------------------*/
+#body.dark-mode{
+    background-color: #2d3436;
+}
+#body.dark-mode h2 {
+    color: #ccc;
+}
+#body.dark-mode h3 {
+    color: #ccc;
+}
+#body.dark-mode a{
+    color: #ccc;
+}
+#body.dark-mode p{
+    color: #ccc;
+}
+#body.dark-mode .navbar{
+    background: #353b48 !important;
+}
+#body.dark-mode #myprofile p{
+    background: #636e72;
+}
+#body.dark-mode .container a{
+    background: #636e72;
+}
+#body.dark-mode #about{
+    background: #717171;
+}
+#body.dark-mode #skill{
+    background: #717171;
+}
+#body.dark-mode #contact{
+    background: #636e72;
+}
+#body.dark-mode .sticky{
+    background: #636e72;
+}
+
+@media (max-width: 576px){
+    .text-banner{
+        top: 30px;
+        left:5px;
+    }
+    .text-banner h2{
+        text-align: center;
+        font-size: 30px;
+    }
+    .checkbox{
+        top: -35px;
+        left: 200px;
+    }
+    #about{
+        top: 30px;
+    }
+    .information-detail{
+        left: 5px;
+    }
+    #education{
+        margin: 90px 0px 50px;
+    }
+    #education h2{
+        padding-top: 5px;
+    }
+    .information-education{
+        padding: 10px;
+    }
+    #skill{
+        padding-bottom: 10px;
+    }
+    .chart-area{
+        width: 400px;
+    }
+    .text{
+        padding: 0 20px;
+    }
+    #copyright{
+        padding-top: 30px;
+    }
+    #copyright .col-xs-6:last-child{
+        top:-53px;
+    }
+}
