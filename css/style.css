@@ -111,6 +111,7 @@ img{
     border-radius: 25px;
 }
 .container a{
+    position: relative;
     display: block;
     background: hsl(204, 93%, 72%);
     padding: 7px 10px;
@@ -121,7 +122,7 @@ img{
     border-radius: 25px;
     color: #ffffff;
     margin-top: 7px;
-    margin-left: 120px;
+    left: 120px;
     font-size: 20px;
     transition: 0.5s;
 }
@@ -421,16 +422,15 @@ img{
 @media (max-width: 400px){
     img{
         margin-top: 5px;
-        width: 355px;
+        width: 350px;
     }
     .checkbox{
         left: 180px;
     }
     #myprofile p, .container a{
+        padding-top: 13px;
         left: 80px;
-    }
-    .container a{
-        margin-left: 80px;
+        font-size: 15px;
     }
     .chart-area{
         width: 260px;
