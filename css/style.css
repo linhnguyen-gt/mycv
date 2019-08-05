@@ -8,6 +8,7 @@
     font-family: 'Anton', sans-serif;
     color: #000;
 }
+
 .navbar{
     font-family: 'Libre Franklin', sans-serif;
 }
@@ -141,10 +142,15 @@ img{
     letter-spacing: 3px;
     font-family: 'Fascinate', cursive;
 }
+.text-banner h3{
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-family: 'Fascinate', cursive
+}
 .text-banner p{
     font-family: 'Dancing Script', cursive;
-    font-size: 25px;
-    line-height: 40px;
+    font-size: 26px;
+    line-height: 50px;
 }
 #particles-js{
     position: absolute;
@@ -335,6 +341,24 @@ img{
 #copyright .col-xs-6:last-child{
     text-align: right;
 }
+#backHead{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    transition: 0.5s;
+    opacity: 0;
+}
+#backHead.actived{
+    opacity: 1;
+}
+#backHead i{
+    font-size: 30px;
+    color: #cccccc;
+    padding: 70px 20px;
+}
+#backHead:hover{
+    transform: scale(1.2);
+}
 /*--------------------------------------------------------*/
                  /*Dark - Light Mode*/
 /*--------------------------------------------------------*/
@@ -374,6 +398,45 @@ img{
 #body.dark-mode .sticky{
     background: #636e72;
 }
+/*--------------------------------------------------------*/
+                 /*Animation*/
+/*--------------------------------------------------------*/
+.animatelogo{
+    animation-name: fadeleft;
+    animation-duration: 1.5s;
+}
+.animatetoggle{
+    animation-name: faderight;
+    animation-duration: 1.5s;
+}
+.animatemenu{
+    animation-name: faderight;
+    animation-duration: 1.5s;
+}
+@keyframes fadeleft{
+    from {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+      }
+    
+      to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+      }
+}
+@keyframes faderight {
+    from {
+      opacity: 0;
+      transform: translate3d(100%, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+
 
 @media (max-width: 500px){
     .text-banner{
@@ -382,7 +445,9 @@ img{
     }
     .text-banner h2{
         text-align: center;
-        font-size: 30px;
+    }
+    .text-banner h3{
+        text-align: center;
     }
     .checkbox{
         top: -35px;
@@ -417,6 +482,12 @@ img{
     }
     #copyright .col-xs-6:last-child{
         top:-53px;
+    }
+    #backHead{
+        bottom: -45px;
+    }
+    #backHead i{
+        font-size: 40px;
     }
 }
 @media (max-width: 400px){

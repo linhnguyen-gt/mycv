@@ -8,20 +8,21 @@
     <link rel="shortcut icon" type="image/x-icon" href="./avatar.ico">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body id="body" class="light-mode">
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
         <div class="container-fluid">
             <a class="navbar-branch" href="#">
-                <h3>Gaster</h3>
+                <h3 class="animatelogo">Gaster</h3>
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" 
+            <button class="navbar-toggler animatetoggle" type="button" data-toggle="collapse" 
                 data-target="#navbarResponsive">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ml-auto animatemenu">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Home</a>
                     </li>
@@ -40,7 +41,7 @@
                 </ul>
             </div>
             <div class="col-md-1">
-                 <div class="checkbox">
+                 <div class="checkbox animated fadeInDown">
                     <div class="inner" onclick="darkLightMode()">
                         <div class="toggle"></div>
                     </div>
@@ -59,7 +60,8 @@
             </div>
             <div class="col-xs-6 col-sm-6 col-md-6">
                 <div class="text-banner">
-                    <h2>THINK CREATIVE AND MAKE INNOVATIVE DESIGN</h2>
+                    <h2>THINK CREATIVE</h2>
+                    <h3>AND MAKE INNOVATIVE DESIGN</h3>
                     <p>My name is Linh. I'm a Frontend Developer. Frontend developing is my fun and pleasure. It's not only the job. I’m the student but I'll graduate in 25th December this year. In my free time, I like to learn and test my project. I have the ability to for Team-Work as well as work independently, under pressure.</p>
                 </div>
             </div>
@@ -69,7 +71,7 @@
         <div class="container-fluid padding">
             <div class="row">
                 <div class="col-12">
-                    <h2>About Me</h2>
+                    <h2 class="animate">About Me</h2>
                 </div>
                 <div class="information-detail">
                         <table class="detail">
@@ -183,12 +185,15 @@
                     <p>Contact me on social network</p>
                 </div>
                 <div class="social-network">
-                        <ul>
-                            <li><a href="https://www.facebook.com/teo.nito.92" title="Linh Nguyen"><i class="fab fa-facebook"></i><span>Linh Nguyen</span></a></li>
-                            <li><a title="Email" class="email"><i class="fas fa-at"></i><span>linhgaster@gmail.com</span></a></li>
-                            <li><a title="Number Phone"><i class="fas fa-mobile" aria-hidden="true"></i><span>0353940862</span></a></li>
-                        </ul>
-                    </div>
+                    <ul>
+                        <li><a href="https://www.facebook.com/teo.nito.92" title="Linh Nguyen"><i class="fab fa-facebook"></i><span>Linh Nguyen</span></a></li>
+                        <li><a title="Email" class="email"><i class="fas fa-at"></i><span>linhgaster@gmail.com</span></a></li>
+                        <li><a title="Number Phone"><i class="fas fa-mobile" aria-hidden="true"></i><span>0353940862</span></a></li>
+                    </ul>
+                </div>
+                <div id="backHead">
+                    <i class="fas fa-chevron-circle-up" onclick="backHead()"></i>
+                </div>
             </div>
         </div>
     </div>
