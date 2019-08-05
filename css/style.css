@@ -15,6 +15,8 @@
     margin-right: 10px;
 }
 /*--------------------------------------------------------*/
+/*Checkbox - Dark Light Mode*/
+/*--------------------------------------------------------*/
 .checkbox{
     position: absolute;
     top: -15px;
@@ -83,6 +85,8 @@
     font-family: 'Libre Franklin', sans-serif;
 }
 /*--------------------------------------------------------*/
+                    /*Banner*/
+/*--------------------------------------------------------*/
 .container{
     margin-top: 60px;
     margin-bottom: 60px;
@@ -147,6 +151,8 @@ img{
     height: 100vh;
 }
 /*--------------------------------------------------------*/
+                    /*About Me*/
+/*--------------------------------------------------------*/
 #about{
     position: relative;
     top: 50px;
@@ -179,6 +185,8 @@ img{
     padding: 15px;
 }
 /*--------------------------------------------------------*/
+                 /*Education*/
+/*--------------------------------------------------------*/
 #education{
     margin: 90px 0px 130px;
 }
@@ -200,6 +208,8 @@ img{
 .space{
     padding:20px;
 }
+/*--------------------------------------------------------*/
+                 /*Skill*/
 /*--------------------------------------------------------*/
 #skill{
     background:#3498db;
@@ -234,6 +244,8 @@ img{
     color: #dfe6e9;
     font-weight: bold;
 }
+/*--------------------------------------------------------*/
+                 /*contact*/
 /*--------------------------------------------------------*/
 #contact{
     padding: 20px;
@@ -310,6 +322,8 @@ img{
     border-radius: 25px;
 }
 /*--------------------------------------------------------*/
+                 /*Copyright*/
+/*--------------------------------------------------------*/
 #copyright{
     background: #2d3436;
     color: #ecf0f1;
@@ -321,7 +335,7 @@ img{
     text-align: right;
 }
 /*--------------------------------------------------------*/
-/*Dark - Light Mode*/
+                 /*Dark - Light Mode*/
 /*--------------------------------------------------------*/
 #body.dark-mode{
     background-color: #2d3436;
@@ -360,7 +374,7 @@ img{
     background: #636e72;
 }
 
-@media (max-width: 576px){
+@media (max-width: 500px){
     .text-banner{
         top: 30px;
         left:5px;
@@ -402,5 +416,34 @@ img{
     }
     #copyright .col-xs-6:last-child{
         top:-53px;
+    }
+}
+@media (max-width: 400px){
+    img{
+        margin-top: 5px;
+        width: 365px;
+    }
+    #myprofile p, .container a{
+        left: 80px;
+    }
+    .container a{
+        margin-left: 80px;
+    }
+    .chart-area{
+        width: 260px;
+        height: 250px;
+    }
+    .information-detail, .information-education, .text p{
+        font-size: 15px;
+    }
+    .social-network{
+        position: relative;
+        padding-right: none;
+        width: 100px;
+        right: 100px;
+    }
+    .social-network ul li a{
+        pointer-events: none;
+        width: 230px;
     }
 }
