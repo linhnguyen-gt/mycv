@@ -493,7 +493,7 @@ img{
 @media (max-width: 400px){
     img{
         margin-top: 5px;
-        width: 335px;
+        width: 325px;
     }
     .checkbox{
         left: 180px;

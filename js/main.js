@@ -23,7 +23,6 @@ function load(){
     var get = document.getElementById('backHead')
     if(window.scrollY > 300){
         get.classList.add('actived');
-        console.log('hihi')
     }else{
         get.classList.remove('actived');
     }
