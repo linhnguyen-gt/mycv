@@ -11,7 +11,7 @@ var get = document.querySelector('i');
 function backHead(){
     var height = self.pageYOffset;
     var set = height;
-    var run = setInterval(function(){
+    var run = setTimeout(function(){
         height = height - 0.05*set;
         window.scrollTo(0,height);
         if(height <= 0 ){
